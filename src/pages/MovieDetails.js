@@ -23,7 +23,7 @@ export default function MovieDetails() {
 
   useEffect(() => {
     dispatch(getMovieDetails({ language: contextLang }, params.id));
-  }, []);
+  }, [contextLang]);
 
   return (
     <div className="container my-5">
